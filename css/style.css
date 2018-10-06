@@ -121,17 +121,21 @@ header a[href^="#"] {
   color:#ddddbb
 }
 
+header a[href^="#"]:hover {
+  color: #fff;
+}
+
 header .header-caption {
   display: block;
-  text-transform: uppercase;
   padding-top: 10px;
   font-family: "Catamaran", sans-serif;
   font-size: 46px;
   font-weight: 900;
+  text-transform: uppercase;
   text-decoration: none;
-  color: rgb(233, 229, 180);
   text-align: center;
   text-shadow: 2px 2px #111;
+  color: rgb(233, 229, 180);
 }
 
 header nav ul li {
@@ -144,5 +148,50 @@ header nav ul {
   display: block;
   margin: 0 auto;
   width: fit-content;
+}
+
+main {
+  position: absolute;
+  margin-top: 0;
+  width:100%;
+  background-color:#d4d4aa;
+}
+
+.wrapper-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  padding-top: 40px;
+  background-color: #bbbb77;
+  margin: 0 auto;
+  font-family: 'Special Elite', cursive;
+  font-size: 22px;
+  line-height: 1.5em;
+  max-width: 1024px;
+  width: 100%;
+  text-align: center;
+}
+
+#about-me {
+  font-family: "Black Ops One", sans-serif;
+  line-height: 1em;
+  font-size: 42px;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  text-shadow: 3px 2px #4d4d00;
+}
+
+.about-me {
+  padding: 0 10px;
+}
+
+.about-me p{
+  text-indent: 20px;
+  text-align: justify;
+}
+
+.about-me abbr {
+  border: none;
+  text-decoration: none;
 }
 
