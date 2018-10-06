@@ -103,6 +103,9 @@ input, select {
 
 header {
   background-image: url(../image/header-camo.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  border-bottom: 5px solid #fff;
   grid-area: header;
   background-size: cover;
   width: 100%;
@@ -111,10 +114,11 @@ header {
 
 header a[href^="#"] {
   font-family: "Catamaran", sans-serif;
-  font-size: 28px;
-  text-decoration: none;
+  font-size: 22px;
+  text-decoration: underline;
   text-transform: uppercase;
-  color: #fff;
+  text-shadow: 1px 1px #111;
+  color:#ddddbb
 }
 
 header .header-caption {
@@ -127,5 +131,18 @@ header .header-caption {
   text-decoration: none;
   color: rgb(233, 229, 180);
   text-align: center;
+  text-shadow: 2px 2px #111;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 20px 5px 15px 5px;
+
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
 }
 
