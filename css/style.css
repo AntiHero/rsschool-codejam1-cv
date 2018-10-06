@@ -100,3 +100,32 @@ input, select {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
 }
+
+header {
+  background-image: url(../image/header-camo.jpg);
+  grid-area: header;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+header a[href^="#"] {
+  font-family: "Catamaran", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+header .header-caption {
+  display: block;
+  text-transform: uppercase;
+  padding-top: 10px;
+  font-family: "Catamaran", sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  text-decoration: none;
+  color: rgb(233, 229, 180);
+  text-align: center;
+}
+
