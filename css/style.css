@@ -185,9 +185,14 @@ main {
   padding: 0 10px;
 }
 
+
 .about-me p{
-  text-indent: 20px;
+  text-indent: 25px;
   text-align: justify;
+}
+
+.about-me p a img:hover {
+  opacity: 0.9;
 }
 
 .about-me abbr {
