@@ -91,3 +91,7 @@ hr {
 input, select {
   vertical-align:middle;
 }
+
+.wrapper {
+  grid:display;
+}
