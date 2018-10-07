@@ -99,17 +99,17 @@ input, select {
                        "footer";
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+  margin: 0 auto;
 }
 
 header {
+  grid-area: header;
   background-image: url(../image/header-camo.jpg);
   background-repeat: no-repeat;
   background-position: cover;
   border-bottom: 5px solid #fff;
-  grid-area: header;
   background-size: cover;
   width: 100%;
-  height: auto;
 }
 
 header a[href^="#"] {
@@ -118,11 +118,7 @@ header a[href^="#"] {
   text-decoration: underline;
   text-transform: uppercase;
   text-shadow: 1px 1px #111;
-  color:#ddddbb
-}
-
-header a[href^="#"]:hover {
-  color: #fff;
+  color:#ddddbb;
 }
 
 header .header-caption {
@@ -138,9 +134,13 @@ header .header-caption {
   color: rgb(233, 229, 180);
 }
 
-header nav ul li {
+#header li a:hover {
+  color: #fff;
+}
+
+#header li {
   display: inline-block;
-  padding: 20px 5px 15px 5px;
+  padding: 20px 3px 15px 3px;
 
 }
 
@@ -151,6 +151,7 @@ header nav ul {
 }
 
 main {
+  grid-area: main;
   position: absolute;
   margin-top: 0;
   width:100%;
@@ -160,7 +161,10 @@ main {
 .wrapper-main {
   display: grid;
   grid-template-areas: "about-me"
-                       "portfolio";
+                       "portfolio"
+                       "contacts";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
   padding-top: 40px;
   background-color: #bbbb77;
   margin: 0 auto;
@@ -170,6 +174,7 @@ main {
   max-width: 1024px;
   width: 100%;
   text-align: center;
+  overflow: visible;
 }
 
 #about-me {
@@ -186,8 +191,7 @@ main {
   padding: 0 10px;
 }
 
-
-.about-me p{
+.about-me > p{
   text-indent: 25px;
   text-align: justify;
 }
@@ -199,7 +203,6 @@ main {
 
 .about-me hr {
   border: none;
-  border: none; 
   color: #111; 
   background-color: #111; 
   height: 2px; 
@@ -220,6 +223,7 @@ main {
 }
 
 #portfolio {
+  position: relative;
   font-family: "Black Ops One", sans-serif;
   line-height: 1em;
   font-size: 42px;
@@ -229,9 +233,15 @@ main {
 }
 
 .portfolio p {
-  margin-top: 0;
   text-indent: 25px;
   text-align: justify;
+}
+
+.portfolio hr {
+  border: none;
+  color: #111; 
+  background-color: #111; 
+  height: 2px; 
 }
 
 #languages {
@@ -251,3 +261,23 @@ main {
 #projects li a:hover{
   color: #000;
 }
+
+.contacts {
+  font-family: 'Dancing Script', cursive;
+  border-top: 3px solid #fff;
+  grid-area: contacts;
+  padding: 20px 10px;
+  text-align: left;
+  background-color: #4d4d00;
+}
+
+.contacts h3 {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+#contacts, a{
+  padding-left: 10px;
+  color: #fff;
+}
+
