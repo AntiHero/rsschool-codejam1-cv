@@ -159,12 +159,12 @@ main {
 
 .wrapper-main {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "about-me"
+                       "portfolio";
   padding-top: 40px;
   background-color: #bbbb77;
   margin: 0 auto;
-  font-family: 'Special Elite', cursive;
+  font-family:'Special Elite', cursive;
   font-size: 22px;
   line-height: 1.5em;
   max-width: 1024px;
@@ -177,11 +177,12 @@ main {
   line-height: 1em;
   font-size: 42px;
   text-transform: uppercase;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   text-shadow: 3px 2px #4d4d00;
 }
 
 .about-me {
+  grid-area: about-me;
   padding: 0 10px;
 }
 
@@ -189,6 +190,19 @@ main {
 .about-me p{
   text-indent: 25px;
   text-align: justify;
+}
+
+.about-me p a img {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.about-me hr {
+  border: none;
+  border: none; 
+  color: #111; 
+  background-color: #111; 
+  height: 2px; 
 }
 
 .about-me p a img:hover {
@@ -200,3 +214,40 @@ main {
   text-decoration: none;
 }
 
+.portfolio {
+  grid-area: portfolio;
+  padding: 0 10px;
+}
+
+#portfolio {
+  font-family: "Black Ops One", sans-serif;
+  line-height: 1em;
+  font-size: 42px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  text-shadow: 3px 2px #4d4d00;
+}
+
+.portfolio p {
+  margin-top: 0;
+  text-indent: 25px;
+  text-align: justify;
+}
+
+#languages {
+  text-align: left;
+  padding: 20px 40px;
+}
+
+#projects {
+  text-align: left;
+  padding: 20px 40px;
+}
+
+#projects li a{
+  color: #4d6600;
+}
+
+#projects li a:hover{
+  color: #000;
+}
