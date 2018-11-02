@@ -1,0 +1,283 @@
+/*reset settings*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+.wrapper {
+  grid:display;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  margin: 0 auto;
+}
+
+header {
+  grid-area: header;
+  background-image: url(../image/header-camo.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  border-bottom: 5px solid #fff;
+  background-size: cover;
+  width: 100%;
+}
+
+header a[href^="#"] {
+  font-family: "Catamaran", sans-serif;
+  font-size: 22px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #111;
+  color:#ddddbb;
+}
+
+header .header-caption {
+  display: block;
+  padding-top: 10px;
+  font-family: "Catamaran", sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 2px #111;
+  color: rgb(233, 229, 180);
+}
+
+#header li a:hover {
+  color: #fff;
+}
+
+#header li {
+  display: inline-block;
+  padding: 20px 2px 15px 2px;
+
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+main {
+  grid-area: main;
+  position: absolute;
+  margin-top: 0;
+  width:100%;
+  background-color:#d4d4aa;
+}
+
+.wrapper-main {
+  display: grid;
+  grid-template-areas: "about-me"
+                       "portfolio"
+                       "contacts";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  padding-top: 40px;
+  background-color: #bbbb77;
+  margin: 0 auto;
+  font-family:'Special Elite', cursive;
+  font-size: 22px;
+  line-height: 1.5em;
+  max-width: 1024px;
+  width: 100%;
+  text-align: center;
+  overflow: visible;
+}
+
+#about-me {
+  font-family: "Black Ops One", sans-serif;
+  line-height: 1em;
+  font-size: 42px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  text-shadow: 3px 2px #4d4d00;
+}
+
+.about-me {
+  grid-area: about-me;
+  padding: 0 10px;
+}
+
+.about-me > p{
+  text-indent: 25px;
+  text-align: justify;
+}
+
+.about-me p a img {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.about-me hr {
+  border: none;
+  color: #111; 
+  background-color: #111; 
+  height: 2px; 
+}
+
+.about-me p a img:hover {
+  opacity: 0.9;
+}
+
+.about-me abbr {
+  border: none;
+  text-decoration: none;
+}
+
+.portfolio {
+  grid-area: portfolio;
+  padding: 0 10px;
+}
+
+#portfolio {
+  position: relative;
+  font-family: "Black Ops One", sans-serif;
+  line-height: 1em;
+  font-size: 42px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  text-shadow: 3px 2px #4d4d00;
+}
+
+.portfolio p {
+  text-indent: 25px;
+  text-align: justify;
+}
+
+.portfolio hr {
+  border: none;
+  color: #111; 
+  background-color: #111; 
+  height: 2px; 
+}
+
+#languages {
+  text-align: left;
+  padding: 20px 40px;
+}
+
+#projects {
+  text-align: left;
+  padding: 20px 40px;
+}
+
+#projects li a{
+  color: #4d6600;
+}
+
+#projects li a:hover{
+  color: #000;
+}
+
+.contacts {
+  font-family: 'Dancing Script', cursive;
+  border-top: 3px solid #fff;
+  grid-area: contacts;
+  padding: 20px 10px;
+  text-align: left;
+  background-color: #4d4d00;
+}
+
+.contacts h3 {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+#contacts, a{
+  padding-left: 10px;
+  color: #fff;
+}
+
